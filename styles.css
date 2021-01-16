@@ -1,0 +1,203 @@
+html {
+    font-family: 'Texturina', serif;
+}
+
+body {
+    position: relative; top: 100px;
+    background-color: gray;
+    margin: 0px 150px 0px 150px;
+}
+
+.navbar {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    /* overflow: hidden; */
+    position: fixed;
+    z-index: 1;
+    top: -20px;
+    left: -5px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        margin: -15px 0px -15px 0;
+    }
+    #about img {
+        display: none;
+    }
+    .navbar a {
+        color: white;
+        font-size: 0.75em;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+    }
+        
+    /* Add a background color on mouse-over */
+    .navbar a:hover {
+        color: #4CAF50;
+      }
+      
+      /* Style the current/active link */
+    .navbar a:active {
+        color: #938DF0;
+      }
+}
+
+@media only screen and (min-width: 500px) {
+    .navbar a {
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+    }
+    
+    /* Add a background color on mouse-over */
+    .navbar a:hover {
+        color: #4CAF50;
+      }
+      
+      /* Style the current/active link */
+    .navbar a:active {
+        color: #938DF0;
+      }
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro h1 {
+    font-size: 55px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    white-space: nowrap;
+}
+
+.intro h2 {
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+#about img {
+    border: black 2px solid;
+    border-radius: 30px;
+}
+
+#projects {
+    white-space: nowrap;
+}
+
+#projects h1 {
+    font-size: 55px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.summary {
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+}
+
+.project1:hover {
+    cursor: pointer;
+}
+
+.project2:hover {
+    cursor: pointer;
+}
+
+.project3:hover {
+    cursor: pointer;
+}
+
+.project4:hover {
+    cursor: pointer;
+}
+
+#skills {
+    white-space: nowrap;
+}
+
+#skills h1 {
+    font-size: 55px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+}
+
+#contact {
+    white-space: nowrap;
+}
+
+#contact h1 {
+    font-size: 55px;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
+}
+
+#contact img {
+    padding: 0px 5px 0px 0px;
+}
+
+#contact img:hover {
+    cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+}
+
+.collapsible {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
